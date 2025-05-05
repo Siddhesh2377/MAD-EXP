@@ -63,8 +63,4 @@ setContent block.
 
 ## License
 
-[Specify your license here]
-
-## Contact
-
-[Your contact information]
+BAS GPM vale hee Use Karo NO Sharing, Else Fuck You..!
