@@ -61,10 +61,6 @@ setContent block.
 - `exp8`: Camera integration
 - `exp_11`: Device sensor data visualization
 
-## Screenshots
-
-[Add screenshots of different experiments here]
-
 ## License
 
 [Specify your license here]
