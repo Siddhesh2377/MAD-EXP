@@ -1,0 +1,275 @@
+/* Android-inspired Dark Theme UI (Optimized) */
+
+:root {
+    --primary-color: #3ddc84;
+    --secondary-color: #4285f4;
+    --accent-color: #ff5252;
+
+    --background: #121212;
+    --card-bg: #1e1e1e;
+    --header-bg: linear-gradient(90deg, #0b331e, #1a3c6e);
+
+    --text-primary: #e8eaed;
+    --text-secondary: #9aa0a6;
+    --text-on-primary: #ffffff;
+    --text-on-surface: #cfcfcf;
+
+    --shadow-color: rgba(0, 0, 0, 0.3);
+    --hover-shadow: rgba(61, 220, 132, 0.2);
+
+    --border-color: #303134;
+}
+
+* {
+    box-sizing: border-box;
+}
+
+body {
+    background-color: var(--background);
+    color: var(--text-primary);
+    font-family: 'Roboto', 'Quicksand', sans-serif;
+    margin: 0;
+    padding: 0;
+    line-height: 1.6;
+}
+
+header {
+    padding: 1.5rem 1rem;
+    background: var(--header-bg);
+    color: var(--text-on-primary);
+    box-shadow: 0 4px 6px var(--shadow-color);
+}
+
+header h1 {
+    margin: 0;
+    font-size: 2.2rem;
+    font-weight: 500;
+    letter-spacing: 0.5px;
+}
+
+.theme-switch {
+    position: relative;
+    display: inline-block;
+    width: 60px;
+    height: 30px;
+}
+
+.theme-switch input {
+    opacity: 0;
+    width: 0;
+    height: 0;
+}
+
+.slider {
+    position: absolute;
+    cursor: pointer;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-color: var(--card-bg);
+    transition: .4s;
+    border-radius: 34px;
+    display: flex;
+    align-items: center;
+    padding: 0 4px;
+}
+
+.slider:before {
+    content: "";
+    position: absolute;
+    height: 22px;
+    width: 22px;
+    left: 4px;
+    background-color: var(--primary-color);
+    transition: .4s;
+    border-radius: 50%;
+}
+
+input:checked + .slider:before {
+    transform: translateX(30px);
+}
+
+.slider .sun,
+.slider .moon {
+    width: 20px;
+    height: 20px;
+    opacity: 0.7;
+    transition: opacity 0.3s ease;
+    font-size: 18px;
+    text-align: center;
+}
+
+.slider .sun {
+    margin-left: auto;
+}
+
+.slider .moon {
+    opacity: 0.3;
+}
+
+input:checked + .slider .sun {
+    opacity: 0.3;
+}
+
+input:checked + .slider .moon {
+    opacity: 0.7;
+}
+
+.container {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+    gap: 1.5rem;
+    padding: 1.5rem;
+    max-width: 1400px;
+    margin: 0 auto;
+}
+
+.card {
+    background-color: var(--card-bg);
+    border-radius: 12px;
+    padding: 1.5rem;
+    box-shadow: 0 2px 8px var(--shadow-color);
+    transition: transform 0.2s ease, box-shadow 0.2s ease;
+    display: flex;
+    flex-direction: column;
+    border: 1px solid var(--border-color);
+}
+
+.card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 8px 16px var(--hover-shadow);
+}
+
+.card h2 {
+    color: var(--primary-color);
+    margin: 0 0 0.75rem;
+    font-size: 1.4rem;
+    font-weight: 500;
+}
+
+.card p {
+    font-size: 1rem;
+    color: var(--text-secondary);
+    flex-grow: 1;
+    margin-bottom: 1.25rem;
+}
+
+.card-actions {
+    margin-top: auto;
+    display: flex;
+    gap: 0.5rem;
+}
+
+/* Material Button */
+.btn {
+    padding: 0.7rem 1.2rem;
+    border: none;
+    background-color: var(--primary-color);
+    color: #222; /* Darker text when idle */
+    border-radius: 4px;
+    cursor: pointer;
+    transition: background-color 0.2s ease, color 0.2s ease, transform 0.2s ease, box-shadow 0.2s ease;
+    font-weight: 500;
+    font-size: 0.9rem;
+    text-transform: uppercase;
+    letter-spacing: 0.5px;
+    box-shadow: 0 2px 4px var(--shadow-color);
+    min-width: 88px;
+    text-align: center;
+    position: relative;
+    overflow: hidden;
+}
+
+.btn:hover {
+    background-color: var(--secondary-color);
+    color: var(--text-on-primary); /* White text on hover */
+    box-shadow: 0 4px 8px var(--shadow-color);
+}
+
+.btn:active {
+    transform: translateY(2px);
+    box-shadow: 0 1px 2px var(--shadow-color);
+}
+
+.btn:focus-visible {
+    outline: 2px solid var(--accent-color);
+    outline-offset: 2px;
+}
+
+/* Ripple Effect */
+.btn::after {
+    content: '';
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    width: 5px;
+    height: 5px;
+    background: rgba(255, 255, 255, 0.5);
+    opacity: 0;
+    border-radius: 100%;
+    transform: scale(1) translate(-50%, -50%);
+    transform-origin: 50% 50%;
+}
+
+@keyframes ripple {
+    0% {
+        transform: scale(0);
+        opacity: 0.5;
+    }
+    100% {
+        transform: scale(20);
+        opacity: 0;
+    }
+}
+
+.btn:focus:not(:active)::after {
+    animation: ripple 0.6s ease-out;
+}
+
+.android-badge {
+    position: absolute;
+    top: 1rem;
+    right: 1rem;
+    background-color: var(--primary-color);
+    color: var(--text-primary);
+    border-radius: 50%;
+    width: 24px;
+    height: 24px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 12px;
+    font-weight: bold;
+}
+
+footer {
+    text-align: center;
+    padding: 1.5rem;
+    color: var(--text-secondary);
+    font-size: 0.9rem;
+    margin-top: 2rem;
+    border-top: 1px solid var(--border-color);
+}
+
+/* Responsive tweaks */
+@media (max-width: 768px) {
+    header h1 {
+        font-size: 1.8rem;
+    }
+
+    .container {
+        padding: 1rem;
+        gap: 1rem;
+    }
+}
+
+@media (max-width: 480px) {
+    header h1 {
+        font-size: 1.6rem;
+    }
+
+    .card {
+        padding: 1.1rem;
+    }
+}
