@@ -1,0 +1,106 @@
+{
+  "project_info": {
+    "project_number": "823195481540",
+    "firebase_url": "https://home-eb43e-default-rtdb.asia-southeast1.firebasedatabase.app",
+    "project_id": "home-eb43e",
+    "storage_bucket": "home-eb43e.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:823195481540:android:f5f5b667b13b07aa8de091",
+        "android_client_info": {
+          "package_name": "com.dark.home"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "823195481540-54bm2r3t3jq1mcfclhm7903b5sg1tdjc.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyAUEe0vGOOUyPU0Jk_OwpOviBFYG0pypLw"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "823195481540-54bm2r3t3jq1mcfclhm7903b5sg1tdjc.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    },
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:823195481540:android:6d8c3738733ee1888de091",
+        "android_client_info": {
+          "package_name": "com.dark.mad_exp"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "823195481540-0025gv1gl9lp98a9b5eoju5r89bpstiq.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.dark.mad_exp",
+            "certificate_hash": "c5f934439aefdc3936b8939d31b4d3cb8753bc70"
+          }
+        },
+        {
+          "client_id": "823195481540-54bm2r3t3jq1mcfclhm7903b5sg1tdjc.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyAUEe0vGOOUyPU0Jk_OwpOviBFYG0pypLw"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "823195481540-54bm2r3t3jq1mcfclhm7903b5sg1tdjc.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    },
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:823195481540:android:4a11569b4348fd538de091",
+        "android_client_info": {
+          "package_name": "com.wRaptureReadyEndTimesNewsProphecyDoctrineofPreTribRapture"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "823195481540-54bm2r3t3jq1mcfclhm7903b5sg1tdjc.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyAUEe0vGOOUyPU0Jk_OwpOviBFYG0pypLw"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "823195481540-54bm2r3t3jq1mcfclhm7903b5sg1tdjc.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
