@@ -63,4 +63,4 @@ setContent block.
 
 ## License
 
-BAS GPM vale hee Use Karo NO Sharing, Else Fuck You..!
+BAS GPM vale hee Use Karo NO Sharing, Else .....!
