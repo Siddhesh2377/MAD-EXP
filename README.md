@@ -21,9 +21,9 @@ The app includes multiple experiments demonstrating:
 - **Telephone Features (Experiment 7)**: Phone call functionality
 - **Camera Integration (Experiment 8)**: Camera snapshot capabilities
 - **Sensor Data (Experiment 11)**: Real-time data from device sensors including:
-    - Accelerometer
-    - Gyroscope
-    - Orientation sensors
+  - Accelerometer
+  - Gyroscope
+  - Orientation sensors
 
 ## Technology Stack
 
@@ -45,21 +45,29 @@ The app includes multiple experiments demonstrating:
 3. Sync Gradle files
 4. Run the application on an emulator or physical device
 
-## Usage
+## Detailed Installation Guide
 
-To switch between different experiments, uncomment the desired experiment in the MainActivity's
-setContent block.
+### Prerequisites
 
-## Project Structure
+- Android Studio Hedgehog (2023.1.1) or newer
+- Git installed on your system
+- An Android device or emulator with Android 7.0 (API level 24) or higher
 
-- `exp2`: Simple UI components demonstration
-- `exp3`: Animation examples
-- `exp4`: Firebase authentication implementation
-- `exp5`: College app details
-- `exp6`: Contact management implementation
-- `exp7`: Telephone functionality
-- `exp8`: Camera integration
-- `exp_11`: Device sensor data visualization
+### Step 1: Clone the Repository
+
+**Option 1: Using Android Studio**
+
+1. Open Android Studio
+2. Select "Get from Version Control" from the welcome screen
+3. In the URL field, enter: `https://github.com/yourusername/MADEXP.git`
+4. Choose your desired directory location
+5. Click "Clone"
+
+**Option 2: Using Git Command Line**
+
+1. Open your terminal or command prompt
+2. Navigate to the directory where you want to clone the project
+3. Run the command:
 
 ## License
 
