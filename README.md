@@ -9,6 +9,31 @@ MADEXP showcases various Android development concepts through a series of experi
 experiment focuses on different aspects of Android development, allowing users to explore and learn
 various features.
 
+
+## Detailed Installation Guide
+
+### Prerequisites
+
+- Android Studio Hedgehog (2023.1.1) or newer
+- Git installed on your system
+- An Android device or emulator with Android 7.0 (API level 24) or higher
+
+### Step 1: Clone the Repository
+
+**Option 1: Using Android Studio**
+
+1. Open Android Studio
+2. Select "Get from Version Control" from the welcome screen
+3. In the URL field, enter: `https://github.com/yourusername/MADEXP.git`
+4. Choose your desired directory location
+5. Click "Clone"
+
+**Option 2: Using Git Command Line**
+
+1. Open your terminal or command prompt
+2. Navigate to the directory where you want to clone the project
+3. Run the command:
+
 ## Features
 
 The app includes multiple experiments demonstrating:
@@ -45,29 +70,6 @@ The app includes multiple experiments demonstrating:
 3. Sync Gradle files
 4. Run the application on an emulator or physical device
 
-## Detailed Installation Guide
-
-### Prerequisites
-
-- Android Studio Hedgehog (2023.1.1) or newer
-- Git installed on your system
-- An Android device or emulator with Android 7.0 (API level 24) or higher
-
-### Step 1: Clone the Repository
-
-**Option 1: Using Android Studio**
-
-1. Open Android Studio
-2. Select "Get from Version Control" from the welcome screen
-3. In the URL field, enter: `https://github.com/yourusername/MADEXP.git`
-4. Choose your desired directory location
-5. Click "Clone"
-
-**Option 2: Using Git Command Line**
-
-1. Open your terminal or command prompt
-2. Navigate to the directory where you want to clone the project
-3. Run the command:
 
 ## License
 
